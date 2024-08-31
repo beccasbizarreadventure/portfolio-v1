@@ -1,7 +1,11 @@
 import React from 'react'
-import {Header} from './components/Header'
-import {MiniNav} from './components/MiniNav'
-import { ThemeProvider } from './context/ThemeProvider'
+import HeaderSection from './components/HeaderSection'
+import FooterSection from './components/FooterSection'
+import EduSection from './components/EduSection'
+import IntroSection from './components/IntroSection'
+import ProjectsSection from './components/ProjectsSection'
+import MiniNav from './components/MiniNav'
+import {ThemeProvider} from './context/ThemeProvider'
 
 function App() {
 
@@ -9,7 +13,11 @@ function App() {
     <>
     <ThemeProvider>
       <MiniNav />
-      <Header />
+      <HeaderSection />
+      <IntroSection />
+      <EduSection />
+      <ProjectsSection />
+      <FooterSection />
     </ThemeProvider>
     </>
   )

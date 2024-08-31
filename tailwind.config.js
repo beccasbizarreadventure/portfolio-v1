@@ -26,7 +26,7 @@ export const plugins = [
           text: "#c9cacf", // dark theme text color
           accent: "#faaf3a", // dark theme accent color
           secondary: "#e15a3d", // dark theme secondary color shadow color for page cards
-          contrast: "#4ba6a7", // dark theme contrast color for links and buttons
+          contrast: "#44dcdd", // dark theme contrast color for links and buttons
         }, // dark theme colors
       },
       light: {
@@ -36,10 +36,20 @@ export const plugins = [
           header_text: "#444444", // light theme text color for headers
           text: "#707173", // light theme text color
           accent: "#d82401", // light theme accent color
-          secondary: "#4ba6a7", // light theme secondary color shadow color for page cards
+          secondary: "#44dcdd", // light theme secondary color shadow color for page cards
           contrast: "#faaf3a", // light theme contrast color for links and buttons
         }, // light theme colors
       },
     },
   }),
 ];
+
+
+export default {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // Adjust paths according to your project structure
+    "./public/index.html",
+  ],
+  theme,
+  plugins,
+};
