@@ -6,7 +6,7 @@ export const theme = {
   extend: {
     fontFamily: {
       header: ['Montserrat', 'sans-serif'],
-      main: ['Gothic A1', 'sans-serif'],
+      body: ['Gothic A1', 'sans-serif'],
     },
   },
 };
@@ -19,7 +19,6 @@ export const plugins = [
     layout: {}, // common layout tokens (applied to all themes)
     themes: {
       dark: {
-        layout: {}, // dark theme layout tokens
         colors: {
           background: "#444444", // dark theme background color
           header_text: "#f4f6ff", // dark theme text color for headers
@@ -31,12 +30,6 @@ export const plugins = [
         }, // dark theme colors
       },
       light: {
-        layout: {
-          iconSize: "1.5rem", // icon size for light
-          textSize: "1rem", // text size for light
-          headerSize: "2rem", // header size for light
-          shadowTranslate: "1px", // shadow translate for light
-        }, // light theme layout tokens
         colors: {
           background: "#f4f6ff", // light theme background color
           header_text: "#444444", // light theme text color for headers
