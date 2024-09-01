@@ -2,7 +2,7 @@ import React from 'react';
 
 const IntroSection = () => {
   return (
-    <section id="intro" className="section h-[70rem] pl-10 items-left justify-center">
+    <section id="intro" className="section h-[70rem] pl-20 items-left justify-center">
       <h1 className='font-header text-header_text pb-20'>
         <p className="block relative text-6xl pb-2">REBECCA SMITH - </p>
         <p className="block relative text-4xl ">JUNIOR FULL STACK DEVELOPER</p>

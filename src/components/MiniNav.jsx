@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
 import { Tooltip } from "@nextui-org/tooltip";
+import { motion } from "framer-motion";
 
 const MiniNav = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -8,30 +9,20 @@ const MiniNav = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const itemVariants = {
-    enter: {
-      opacity: 1,
-      y: 0,
-      scale: 0.97, 
-      transition: { type: "spring", stiffness: 300, damping: 24 }
-    },
-    exit: {
-      opacity: 0,
-      y: 20,
-      scale: 0.97,
-      transition: { duration: 0.2 }
+  // Framer Motion animation properties
+  const motionProps = {
+    initial: { scale: 0 },
+    animate: { scale: 1 },
+    exit: { scale: 0 },
+    transition:{
+      duration: 0.5,
+      delay: 0.2,
+      ease: [0, 0.71, 0.2, 1.01]
     }
   };
 
-  const motionProps = {
-    initial: "exit",
-    animate: "enter",
-    exit: "exit",
-    variants: itemVariants
-  };
-
   return (
-    <nav className="fixed right-10 top-10 flex flex-col items-end z-50">
+    <nav className="fixed right-20 top-10 flex flex-col items-end">
       <ul className="flex flex-col justify-center items-center text-background text-xl bg-header_text h-[14rem] w-[4rem] rounded-full mt-10">
         <li>
           <Tooltip
@@ -39,9 +30,15 @@ const MiniNav = () => {
             motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
+              <motion.span
+                className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+                initial={motionProps.initial}
+                animate={motionProps.animate}
+                exit={motionProps.exit}
+                transition={motionProps.transition}
+              >
                 Home
-              </span>
+              </motion.span>
             }
           >
             <button onClick={() => scrollToSection("home")}>
@@ -55,9 +52,15 @@ const MiniNav = () => {
             motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
+              <motion.span
+                className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+                initial={motionProps.initial}
+                animate={motionProps.animate}
+                exit={motionProps.exit}
+                transition={motionProps.transition}
+              >
                 About Me
-              </span>
+              </motion.span>
             }
           >
           <button onClick={() => scrollToSection("intro")}>
@@ -71,9 +74,15 @@ const MiniNav = () => {
             motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
+              <motion.span
+              className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+              initial={motionProps.initial}
+              animate={motionProps.animate}
+              exit={motionProps.exit}
+              transition={motionProps.transition}
+            >
                 Education
-              </span>
+              </motion.span>
             }
           >
           <button onClick={() => scrollToSection("education")}>
@@ -87,9 +96,15 @@ const MiniNav = () => {
             motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
+              <motion.span
+              className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+              initial={motionProps.initial}
+              animate={motionProps.animate}
+              exit={motionProps.exit}
+              transition={motionProps.transition}
+            >
                 Projects
-              </span>
+              </motion.span>
             }
           >
           <button onClick={() => scrollToSection("projects")}>
@@ -103,9 +118,15 @@ const MiniNav = () => {
             motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
+              <motion.span
+              className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+              initial={motionProps.initial}
+              animate={motionProps.animate}
+              exit={motionProps.exit}
+              transition={motionProps.transition}
+            >
                 Contact
-              </span>
+              </motion.span>
             }
           >
           <button onClick={() => scrollToSection("contact")}>
