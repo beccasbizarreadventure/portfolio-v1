@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --font-family: 'Gothic A1', 'Montserrat', sans-serif;
+}
+
+body * {
+  @apply transition-colors duration-100;
 }

@@ -14,11 +14,11 @@ const MiniNav = () => {
     initial: { scale: 0 },
     animate: { scale: 1 },
     exit: { scale: 0 },
-    transition:{
+    transition: {
       duration: 0.5,
       delay: 0.2,
-      ease: [0, 0.71, 0.2, 1.01]
-    }
+      ease: [0, 0.71, 0.2, 1.01],
+    },
   };
 
   return (
@@ -47,7 +47,7 @@ const MiniNav = () => {
           </Tooltip>
         </li>
         <li>
-        <Tooltip
+          <Tooltip
             placement="left-end"
             motionProps={motionProps}
             offset={25}
@@ -63,79 +63,81 @@ const MiniNav = () => {
               </motion.span>
             }
           >
-          <button onClick={() => scrollToSection("intro")}>
-            <i className="fa-regular fa-face-smile p-2"></i>
-          </button>
+            <button onClick={() => scrollToSection("intro")}>
+              <i className="fa-regular fa-face-smile p-2"></i>
+            </button>
           </Tooltip>
         </li>
         <li>
-        <Tooltip
+          <Tooltip
             placement="left-end"
             motionProps={motionProps}
             offset={25}
             content={
               <motion.span
-              className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
-              initial={motionProps.initial}
-              animate={motionProps.animate}
-              exit={motionProps.exit}
-              transition={motionProps.transition}
-            >
+                className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+                initial={motionProps.initial}
+                animate={motionProps.animate}
+                exit={motionProps.exit}
+                transition={motionProps.transition}
+              >
                 Education
               </motion.span>
             }
           >
-          <button onClick={() => scrollToSection("education")}>
-            <i className="fa-solid fa-user-graduate p-2"></i>
-          </button>
-        </Tooltip>
+            <button onClick={() => scrollToSection("education")}>
+              <i className="fa-solid fa-user-graduate p-2"></i>
+            </button>
+          </Tooltip>
         </li>
         <li>
-        <Tooltip
+          <Tooltip
             placement="left-end"
             motionProps={motionProps}
             offset={25}
             content={
               <motion.span
-              className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
-              initial={motionProps.initial}
-              animate={motionProps.animate}
-              exit={motionProps.exit}
-              transition={motionProps.transition}
-            >
+                className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+                initial={motionProps.initial}
+                animate={motionProps.animate}
+                exit={motionProps.exit}
+                transition={motionProps.transition}
+              >
                 Projects
               </motion.span>
             }
           >
-          <button onClick={() => scrollToSection("projects")}>
-            <i className="fa-regular fa-pen-to-square p-2"></i>
-          </button>
-        </Tooltip>
+            <button onClick={() => scrollToSection("projects")}>
+              <i className="fa-regular fa-pen-to-square p-2"></i>
+            </button>
+          </Tooltip>
         </li>
         <li>
-        <Tooltip
+          <Tooltip
             placement="left-end"
             motionProps={motionProps}
             offset={25}
             content={
               <motion.span
-              className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
-              initial={motionProps.initial}
-              animate={motionProps.animate}
-              exit={motionProps.exit}
-              transition={motionProps.transition}
-            >
+                className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
+                initial={motionProps.initial}
+                animate={motionProps.animate}
+                exit={motionProps.exit}
+                transition={motionProps.transition}
+              >
                 Contact
               </motion.span>
             }
           >
-          <button onClick={() => scrollToSection("contact")}>
-            <i className="fa-regular fa-id-card p-2"></i>
-          </button>
-        </Tooltip>
+            <button onClick={() => scrollToSection("contact")}>
+              <i className="fa-regular fa-id-card p-2"></i>
+            </button>
+          </Tooltip>
         </li>
       </ul>
-      <button
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         onClick={toggleTheme}
         className="bg-header_text text-background h-[4rem] w-[4rem] rounded-full text-2xl mt-5"
       >
@@ -144,7 +146,7 @@ const MiniNav = () => {
         ) : (
           <i className="fa-regular fa-sun" />
         )}
-      </button>
+      </motion.button>
     </nav>
   );
 };

@@ -7,10 +7,10 @@ const FooterSection = () => {
       id="contact"
       className="section flex flex-col items-center justify-center"
     >
-      <h1 className="text-6xl font-header text-header_text mb-20">
+      <h1 className="text-6xl font-header text-header_text pb-[5rem]">
         STAY IN TOUCH
       </h1>
-      <div className="flex space-x-10 mb-10">
+      <div className="flex space-x-10 pb-10">
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
