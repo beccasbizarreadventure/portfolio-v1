@@ -5,7 +5,7 @@ import { nextui } from "@nextui-org/react";
 export const theme = {
   extend: {
     fontFamily: {
-      header: ['Anton SC', 'sans-serif'],
+      header: ['Montserrat', 'sans-serif'],
       main: ['Gothic A1', 'sans-serif'],
     },
   },
@@ -24,20 +24,27 @@ export const plugins = [
           background: "#444444", // dark theme background color
           header_text: "#f4f6ff", // dark theme text color for headers
           text: "#c9cacf", // dark theme text color
-          accent: "#faaf3a", // dark theme accent color
-          secondary: "#e15a3d", // dark theme secondary color shadow color for page cards
-          contrast: "#44dcdd", // dark theme contrast color for links and buttons
+          accent: "#5E60CE", // dark theme accent color
+          secondary: "#44dcdd", // dark theme secondary color shadow color for page cards
+          contrast: "#5390D9", // dark theme contrast color for links and buttons
+          buttons: "#f4f6ff",
         }, // dark theme colors
       },
       light: {
-        layout: {}, // light theme layout tokens
+        layout: {
+          iconSize: "1.5rem", // icon size for light
+          textSize: "1rem", // text size for light
+          headerSize: "2rem", // header size for light
+          shadowTranslate: "1px", // shadow translate for light
+        }, // light theme layout tokens
         colors: {
           background: "#f4f6ff", // light theme background color
           header_text: "#444444", // light theme text color for headers
           text: "#707173", // light theme text color
           accent: "#d82401", // light theme accent color
           secondary: "#44dcdd", // light theme secondary color shadow color for page cards
-          contrast: "#faaf3a", // light theme contrast color for links and buttons
+          contrast: "#FAAF3A", // light theme contrast color for links and buttons
+          buttons: "#f4f6ff",
         }, // light theme colors
       },
     },
