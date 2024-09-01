@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderSection = () => {
   return (
-    <div className="flex flex-col items-left justify-center h-screen ml-10">
+    <div className="flex flex-col items-left justify-center h-[70rem] pl-10">
       <div className="relative">
         <h1 className="text-8xl font-header relative">
           <span className="block relative">
