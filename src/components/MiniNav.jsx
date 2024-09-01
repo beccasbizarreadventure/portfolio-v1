@@ -8,15 +8,38 @@ const MiniNav = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const itemVariants = {
+    enter: {
+      opacity: 1,
+      y: 0,
+      scale: 0.97, 
+      transition: { type: "spring", stiffness: 300, damping: 24 }
+    },
+    exit: {
+      opacity: 0,
+      y: 20,
+      scale: 0.97,
+      transition: { duration: 0.2 }
+    }
+  };
+
+  const motionProps = {
+    initial: "exit",
+    animate: "enter",
+    exit: "exit",
+    variants: itemVariants
+  };
+
   return (
-    <nav className="flex flex-col items-end mr-10">
+    <nav className="fixed right-10 top-10 flex flex-col items-end z-50">
       <ul className="flex flex-col justify-center items-center text-background text-xl bg-header_text h-[14rem] w-[4rem] rounded-full mt-10">
         <li>
           <Tooltip
             placement="left-end"
+            motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-2 py-2 rounded-xl font-body">
+              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                 Home
               </span>
             }
@@ -29,9 +52,10 @@ const MiniNav = () => {
         <li>
         <Tooltip
             placement="left-end"
+            motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-2 py-2 rounded-xl font-body">
+              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                 About Me
               </span>
             }
@@ -44,9 +68,10 @@ const MiniNav = () => {
         <li>
         <Tooltip
             placement="left-end"
+            motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-2 py-2 rounded-xl font-body">
+              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                 Education
               </span>
             }
@@ -59,9 +84,10 @@ const MiniNav = () => {
         <li>
         <Tooltip
             placement="left-end"
+            motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-2 py-2 rounded-xl font-body">
+              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                 Projects
               </span>
             }
@@ -74,9 +100,10 @@ const MiniNav = () => {
         <li>
         <Tooltip
             placement="left-end"
+            motionProps={motionProps}
             offset={25}
             content={
-              <span className="bg-header_text bg-opacity-40 text-buttons px-2 py-2 rounded-xl font-body">
+              <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                 Contact
               </span>
             }
