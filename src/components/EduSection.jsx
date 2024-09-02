@@ -15,7 +15,7 @@ export const EduSection = () => {
       </p>
         <p className="block relative text-4xl pb-2 font-header text-header_text">LIGHTHOUSE LABS - </p>
         <p className="block relative text-4xl pb-5 font-header text-header_text">WEB DEVELOPMENT PROGRAM</p>
-        <p className='pl-10 text-text font-body text-lg mr-60'>Education info here</p>
+        <p className='text-text font-body text-lg mr-60'>Education info here</p>
       </div>
     </section>
   );

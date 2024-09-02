@@ -7,8 +7,5 @@
 
 :root {
   --font-family: 'Gothic A1', 'Montserrat', sans-serif;
-}
-
-body * {
-  @apply transition-colors duration-100;
+  @apply transition-colors duration-300;
 }
