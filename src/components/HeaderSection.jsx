@@ -2,6 +2,7 @@ import React from 'react'
 
 const HeaderSection = () => {
   return (
+    <section id="home" className="section">
     <div className="flex flex-col items-left justify-center h-[70rem] pl-20">
       <div className="relative">
         <h1 className="text-8xl font-header relative">
@@ -26,6 +27,7 @@ const HeaderSection = () => {
         </h1>
       </div>
     </div>
+  </section>
   )
 };
 

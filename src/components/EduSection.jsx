@@ -2,7 +2,7 @@ import React from 'react';
 
 export const EduSection = () => {
   return (
-    <section id="education" className="section h-[70rem] pl-20 items-left justify-center">
+    <section id="education" className="section h-[50rem] pl-20 items-left justify-center">
       <h1 className='font-header text-6xl text-header_text pb-[5rem]'>EDUCATION</h1>
       <div className="flex flex-col">
       <p className='pb-10 text-accent font-header text-8xl relative'>
