@@ -15,9 +15,9 @@ const ProjectsSection = () => {
     {
       title: "Poke Collection",
       image: "/PokeCollection.png",
-      description: "Description here",
-      techStack: "Javascript",
-      link: "link here",
+      description: ` This project was based off of the repo and tutorial by Github user imteekay. It uitilizes the PokeApi to populate the pokemon data. You can add pokemon from the 'Wild Encounters' list to the 'Pokedex' list with each pokemon having a custom background color based on their type. The app uses local storage to track the pokemon in your lists as well as any you add with the search bar and sprite color (normal or shiny).`,
+      techStack: "Javascript, React, Tailwind CSS, Framer Motion",
+      link: "https://github.com/beccasbizarreadventure/PokeCollection",
     },
     {
       title: "Plot Twist",
@@ -25,11 +25,6 @@ const ProjectsSection = () => {
       description: "Description here",
       techStack: "Javascript",
       link: "https://github.com/rosario-je/PlotTwist",
-    },
-    {
-      title: "Photo Labs",
-      description: "Description here",
-      link: "link here",
     },
   ];
   return (
@@ -77,10 +72,10 @@ const ProjectsSection = () => {
                     <motion.i
                       className="fa-solid fa-circle-chevron-right absolute right-4 text-buttons z-0"
                       variants={{
-                        initial: { x: 0, opacity: 0 }, // Icon is hidden and starts in the center
-                        hover: { opacity: 1 }, // Icon moves right and becomes visible on hover
+                        initial: { x: 0, opacity: 0 },
+                        hover: { opacity: 1 },
                       }}
-                      transition={{ duration: 0.5 }}
+                      transition={{ duration: 0.3 }}
                     />
                   </motion.div>
                 </a>
@@ -104,19 +99,19 @@ const ProjectsSection = () => {
                 />
               </div>
               <div className="flex flex-col mr-60">
-                <h2 className="text-header_text font-header text-4xl pb-2">
+                <h2 className="text-header_text font-header text-4xl pb-2 pl-60">
                   {project.title}
                 </h2>
-                <p className="text-text font-body text-lg pb-2 pr-60">
+                <p className="text-text font-body text-lg pb-2 pl-60">
                   {project.description}
                 </p>
-                <p className="text-text font-body text-lg pb-2 pr-60">
+                <p className="text-text font-body text-lg pb-2 pl-60">
                   <span className="font-bold">Tech Stack - </span>
                   {project.techStack}
                 </p>
                 <a href={project.link}>
                   <motion.div
-                    className="relative flex items-center justify-center h-[2.5rem] w-[6.5rem] bg-contrast rounded-full overflow-hidden text-lg font-body z-1"
+                    className="relative flex items-center justify-center h-[2.5rem] w-[6.5rem] bg-contrast rounded-full overflow-hidden text-lg font-body z-1 ml-60"
                     whileHover="hover" // Parent triggers hover state
                     whileTap={{ scale: 0.9 }}
                     initial="initial"
