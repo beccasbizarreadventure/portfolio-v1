@@ -6,7 +6,7 @@ export const theme = {
   extend: {
     fontFamily: {
       header: ['Montserrat', 'sans-serif'],
-      body: ['Gothic A1', 'sans-serif'],
+      body: ['Gothic A1', 'serif'],
     },
   },
 };
