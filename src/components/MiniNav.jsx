@@ -23,7 +23,7 @@ const MiniNav = () => {
 
   return (
     <nav className="fixed right-20 top-10 flex flex-col items-end z-50">
-      <ul className="flex flex-col justify-center items-center text-background text-xl bg-header_text h-[14rem] w-[4rem] rounded-full mt-10">
+      <ul className="flex flex-col justify-center items-center text-navlinks text-xl bg-nav h-[14rem] w-[4rem] rounded-full mt-10">
         <li>
           <Tooltip
             placement="left-end"
@@ -139,7 +139,7 @@ const MiniNav = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={toggleTheme}
-        className="bg-header_text text-background h-[4rem] w-[4rem] rounded-full text-2xl mt-5"
+        className="bg-header_text text-navlinks h-[4rem] w-[4rem] rounded-full text-2xl mt-5"
       >
         {theme === "light" ? (
           <i className="fa-regular fa-moon" />

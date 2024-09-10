@@ -27,17 +27,21 @@ export const plugins = [
           secondary: "#44dcdd", // dark theme secondary color shadow color for page cards
           contrast: "#5390D9", // dark theme contrast color for links and buttons
           buttons: "#f4f6ff",
+          nav: "#f4f6ff",
+          navlinks: "#444444",
         }, // dark theme colors
       },
       light: {
         colors: {
-          background: "#f4f6ff", // light theme background color
+          background: "#F0F4FF", // light theme background color
           header_text: "#444444", // light theme text color for headers
           text: "#707173", // light theme text color
           accent: "#d82401", // light theme accent color
           secondary: "#44dcdd", // light theme secondary color shadow color for page cards
           contrast: "#FAAF3A", // light theme contrast color for links and buttons
           buttons: "#f4f6ff",
+          nav: "#444444",
+          navlinks: "#f4f6ff",
         }, // light theme colors
       },
     },
