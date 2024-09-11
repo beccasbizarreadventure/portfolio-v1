@@ -10,7 +10,7 @@ const ProjectsSection = () => {
       title: "Colab",
       image: "/CoLab.png",
       description:
-        "This was my final group project of my Web Development program. Colab is a collaborative platform that allows developers to create, join, and manage programming projects. Users can discover projects, collaborate with team members, and effectively manage project details. The app features user authentication, real-time chat, and a project dependant links for GitHub, Trello, and Figma to streamline the project management process.",
+        "This was the final group project of my Web Development program. Colab is a collaborative platform that allows developers to create, join, and manage programming projects. Users can discover projects, collaborate with team members, and effectively manage project details. The app features user authentication, real-time chat, and a project dependant links for GitHub, Trello, and Figma to streamline the project management process.",
       techStack:
         "Javascript, React + Vite, Node.js, Express, PostgreSQL, Socket.io, Tailwind CSS, DaisyUI",
       link: "https://github.com/rosario-je/CoLab",
@@ -18,14 +18,14 @@ const ProjectsSection = () => {
     {
       title: "Poke Collection",
       image: "/PokeCollection.png",
-      description: ` This project was based off of the repo and tutorial by Github user imteekay. It uitilizes the PokeApi to populate the pokemon data. You can add pokemon from the 'Wild Encounters' list to the 'Pokedex' list with each pokemon having a custom background color based on their type. The app uses local storage to track the pokemon in your lists as well as any you add with the search bar and sprite color (normal or shiny).`,
+      description: `This project was based off of the repo and tutorial by Github user imteekay. It uitilizes the PokeApi to populate the pokemon data. You can add pokemon from the 'Wild Encounters' list to the 'Pokedex' list with each pokemon having a custom background color based on their type. The app uses local storage to track the pokemon in your lists as well as any you add with the search bar and sprite color (normal or shiny).`,
       techStack: "Javascript, React, Tailwind CSS, Framer Motion",
       link: "https://github.com/beccasbizarreadventure/PokeCollection",
     },
     {
       title: "Plot Twist",
       image: "/PlotTwist.png",
-      description: "Description here",
+      description: "This was the midterm project of my Web Development program. Plot Twist is a story creator app where users can create a new story and other users can add to the story. The app features liking stories and story contributions, user profile pages to manage stories and contributions, and a main page to view all the stories in the app.",
       techStack: "Javascript, EJS, Express, Node.js, PostgreSQL, SCSS, jQuery, Ajax",
       link: "https://github.com/rosario-je/PlotTwist",
     },
@@ -41,7 +41,7 @@ const ProjectsSection = () => {
     <section
       id="projects"
       ref= {ref}
-      className="section h-[145rem] pl-20 items-left justify-center"
+      className="section h-[140rem] pl-20 items-left justify-center"
     >
       <h1 className="font-header text-6xl text-header_text pb-[5rem]">
         PROJECTS
