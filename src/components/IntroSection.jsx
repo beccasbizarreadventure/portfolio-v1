@@ -49,7 +49,7 @@ const IntroSection = () => {
                 exit={motionProps.exit}
                 transition={motionProps.transition}
               >
-                My bunny Levi is a great helper!
+                Levi is a great helper!!
               </motion.span>
             }
           >
@@ -57,13 +57,33 @@ const IntroSection = () => {
               <img
                 src="/TempPic.jpg"
                 alt="My Son"
-                className="h-[35rem] w-[25rem] rounded-2xl border-4 border-buttons"
+                className="h-[35rem] w-[25rem] rounded-2xl border-5 border-buttons"
               />
             </div>
           </Tooltip>
-          <p className="pl-[10rem] pt-[2rem] text-text font-body text-lg mr-60">
-            Information about me goes here
-          </p>
+          <ul className="pl-[5rem] pt-[2rem] text-text font-body text-lg mr-60">
+            <li className="pb-2">
+              Hi, I'm Rebecca! I recently discovered a passion for coding
+              through Lighthouse Labs and have been dedicated to web development
+              ever since. 
+            </li>
+              <li className="pb-2">
+              My experience so far has been focused on building apps
+              with JavaScript and React, using relational SQL databases with
+              Express.js as the backend, and styling with CSS/Tailwind CSS.
+            </li>
+            <li className="pb-2">
+              I would love to expand my knowledge further, particularly in
+              exploring more React-based front-end frameworks, learning about
+              different types of relational and non-relational databases, and
+              getting a handle on TypeScript.
+            </li>
+            <li>
+              Beyond coding, I have a love for tattoos, video games, baking, 
+              creating digital art and my own embroidery designs. I also own two
+              adorable bunnies, Levi and Laurel.
+            </li>
+          </ul>
         </div>
       </section>
     </div>

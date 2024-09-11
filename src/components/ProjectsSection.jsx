@@ -95,7 +95,7 @@ const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-[20rem] w-[25rem] rounded-2xl border-4 border-buttons"
+                  className="h-[20rem] w-[25rem] rounded-2xl border-5 border-buttons"
                 />
               </div>
             </div>
@@ -106,7 +106,7 @@ const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-[20rem] w-[25rem] rounded-2xl border-4 border-buttons"
+                  className="h-[20rem] w-[25rem] rounded-2xl border-5 border-buttons"
                 />
               </div>
               <div className="flex flex-col mr-60">
