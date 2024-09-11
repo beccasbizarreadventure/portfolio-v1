@@ -1,7 +1,10 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const ProjectsSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   const projects = [
     {
       title: "Colab",
@@ -28,8 +31,16 @@ const ProjectsSection = () => {
     },
   ];
   return (
+    <div
+    style={{
+      transform: isInView ? "none" : "translateX(-200px)",
+      opacity: isInView ? 1 : 0,
+      transition: "all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
+    }}
+  >
     <section
       id="projects"
+      ref= {ref}
       className="section h-[145rem] pl-20 items-left justify-center"
     >
       <h1 className="font-header text-6xl text-header_text pb-[5rem]">
@@ -143,6 +154,7 @@ const ProjectsSection = () => {
         )}
       </div>
     </section>
+  </div>
   );
 };
 
