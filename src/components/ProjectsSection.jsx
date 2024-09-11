@@ -26,7 +26,7 @@ const ProjectsSection = () => {
       title: "Plot Twist",
       image: "/PlotTwist.png",
       description: "Description here",
-      techStack: "Javascript",
+      techStack: "Javascript, EJS, Express, Node.js, PostgreSQL, SCSS, jQuery, Ajax",
       link: "https://github.com/rosario-je/PlotTwist",
     },
   ];

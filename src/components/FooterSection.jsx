@@ -14,6 +14,10 @@ const FooterSection = () => {
       link: "https://www.linkedin.com/in/rebecca-s-48bb01323/",
       icon: "fa-brands fa-linkedin",
     },
+    {
+      link: "https://flowcv.com/resume/ng1t19mdl5",
+      icon: "fa-solid fa-circle-user",
+    }
   ];
 
   return (
