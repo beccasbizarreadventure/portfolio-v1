@@ -9,3 +9,9 @@
   --font-family: 'Gothic A1', 'Montserrat', sans-serif;
   @apply transition-colors duration-300;
 }
+
+@layer base {
+  h1 {
+    @apply font-header text-header_text text-left sm:text-4xl md:text-6xl lg:text-8xl;
+  }
+}

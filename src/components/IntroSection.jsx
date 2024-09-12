@@ -28,14 +28,14 @@ const IntroSection = () => {
       <section
         ref={ref}
         id="intro"
-        className="section h-[70rem] pl-20 items-left justify-center"
+        className="section h-auto pl-20 items-left justify-center"
       >
-        <h1 className="font-header text-header_text">
+        <h2 className="font-header text-header_text">
           <p className="block relative text-6xl pb-2">REBECCA SMITH - </p>
           <p className="block relative text-4xl pb-[5rem]">
             JUNIOR FULL STACK DEVELOPER
           </p>
-        </h1>
+        </h2>
         <div className="flex flex-row">
           <Tooltip
             placement="bottom"
@@ -53,7 +53,7 @@ const IntroSection = () => {
               </motion.span>
             }
           >
-            <div className="flex-grow-0 flex-shrink-0 flex justify-center items-center before:flex-grow-0 before:flex-shrink-0 bg-accent h-[40rem] w-[30rem] rounded-2xl relative before:absolute before:h-[40rem] before:w-[30rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10">
+            <div className="flex flex-grow-0 flex-shrink-0 justify-center items-center before:flex-grow-0 before:flex-shrink-0 bg-accent h-[40rem] w-[30rem] rounded-2xl relative before:absolute before:h-[40rem] before:w-[30rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10">
               <img
                 src="/TempPic.jpg"
                 alt="My Son"

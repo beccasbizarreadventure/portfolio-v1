@@ -14,23 +14,23 @@ const HeaderSection = () => {
       }}
     >
       <section id="home" className="section" ref={ref}>
-        <div className="flex flex-col items-left justify-center h-[70rem] pl-20">
+        <div className="flex flex-col justify-center h-auto pl-20 pt-40 gap-40">
           <div className="relative">
-            <h1 className="text-8xl font-header relative">
+            <h1 className="relative">
               <span className="block relative">
-                <span className="absolute top-0 left-0 translate-x-2 text-secondary">
+                <span className="absolute top-0 left-0 text-secondary sm:translate-x-1 md:translate-x-2 lg:translate-x-2">
                   WELCOME
                 </span>
                 <span className="relative text-accent">WELCOME</span>
               </span>
               <span className="block relative">
-                <span className="absolute top-0 left-0 translate-x-2 text-secondary">
+                <span className="absolute top-0 left-0 text-secondary sm:translate-x-1 md:translate-x-2 lg:translate-x-2">
                   TO MY
                 </span>
                 <span className="relative text-accent">TO MY</span>
               </span>
               <span className="block relative">
-                <span className="absolute top-0 left-0 translate-x-2 text-secondary">
+                <span className="absolute top-0 left-0 text-secondary sm:translate-x-1 md:translate-x-2 lg:translate-x-2">
                   PORTFOLIO
                 </span>
                 <span className="relative text-accent">PORTFOLIO</span>

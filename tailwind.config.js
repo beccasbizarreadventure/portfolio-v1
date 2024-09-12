@@ -8,6 +8,11 @@ export const theme = {
       header: ['Montserrat', 'sans-serif'],
       body: ['Gothic A1', 'serif'],
     },
+    screens: {
+      'sm': '10px',  // Small devices 
+      'md': '780px',  // Medium devices 
+      'lg': '1280px', // Large devices (desktops)
+    }
   },
 };
 export const plugins = [

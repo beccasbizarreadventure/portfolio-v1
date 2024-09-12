@@ -22,7 +22,7 @@ const MiniNav = () => {
   };
 
   return (
-    <nav className="fixed right-20 top-10 flex flex-col items-end z-50">
+    <nav className="fixed right-20 flex flex-col items-end z-50">
       <ul className="flex flex-col justify-center items-center text-navlinks text-xl bg-nav h-[14rem] w-[4rem] rounded-full mt-10">
         <li>
           <Tooltip

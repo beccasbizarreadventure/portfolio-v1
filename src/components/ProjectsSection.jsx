@@ -41,11 +41,11 @@ const ProjectsSection = () => {
     <section
       id="projects"
       ref= {ref}
-      className="section h-[140rem] pl-20 items-left justify-center"
+      className="section h-auto pl-20 items-left justify-center"
     >
-      <h1 className="font-header text-6xl text-header_text pb-[5rem]">
+      <h2 className="font-header text-6xl text-header_text pb-[5rem]">
         PROJECTS
-      </h1>
+      </h2>
       <div className="flex flex-col">
         {projects.map((project, index) =>
           index % 2 === 0 ? (

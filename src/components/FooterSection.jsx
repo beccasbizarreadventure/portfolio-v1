@@ -30,12 +30,12 @@ const FooterSection = () => {
     >
       <section
         id="contact"
-        className="section flex flex-col items-center justify-center"
+        className="section flex flex-col h-auto items-center justify-center"
         ref={ref}
       >
-        <h1 className="text-6xl font-header text-header_text pb-[5rem]">
+        <h2 className="text-6xl font-header text-header_text pb-[5rem]">
           STAY IN TOUCH
-        </h1>
+        </h2>
         <div className="flex space-x-10 pb-10">
           {links.map((link, index) => (
             <motion.div

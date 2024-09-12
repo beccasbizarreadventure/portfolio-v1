@@ -38,19 +38,19 @@ export const EduSection = () => {
       <section
         id="education"
         ref={ref}
-        className="section h-[50rem] pl-20 items-left justify-center"
+        className="section h-auto pl-20 items-left justify-center"
       >
-        <h1 className="font-header text-6xl text-header_text pb-[5rem]">
+        <h2 className="font-header text-6xl text-header_text pb-10">
           EDUCATION
-        </h1>
+        </h2>
         {education.map((edu, index) => (
         <div className="flex flex-col" key={index}>
-          <p className="pb-10 text-accent font-header text-8xl relative">
-            <span className="absolute top-0 left-0 translate-x-2 text-secondary">
+          <h1 className="pb-10 text-accent relative">
+            <span className="absolute top-0 left-0 text-secondary sm:translate-x-1 md:translate-x-2 lg:translate-x-2">
               {edu.year}
             </span>
             <span className="relative text-accent">{edu.year}</span>
-          </p>
+          </h1>
           <p className="block relative text-4xl pb-2 font-header text-header_text">
             {edu.school}
           </p>

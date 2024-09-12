@@ -10,7 +10,7 @@ import {ThemeProvider} from './context/ThemeProvider'
 function App() {
 
   return (
-    <>
+    <div className='flex flex-col gap-40'>
     <ThemeProvider>
       <MiniNav />
       <HeaderSection />
@@ -19,7 +19,7 @@ function App() {
       <ProjectsSection />
       <FooterSection />
     </ThemeProvider>
-    </>
+    </div>
   )
 }
 
