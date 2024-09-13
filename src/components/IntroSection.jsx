@@ -61,7 +61,7 @@ const IntroSection = () => {
               />
             </div>
           </Tooltip>
-          <ul className="lg:pl-[5rem] pt-[2rem] text-text font-body sm:text-sm md:text-base lg:text-lg sm:mr-20 md:mr-40 lg:mr-60">
+          <ul className="lg:pl-[5rem] pt-[2rem] text-text font-body sm:text-sm md:text-base lg:text-lg sm:mr-20 md:mr-60 lg:mr-80">
             <li className="pb-2 sm:pt-5 md:pt-5">
               Hi, I'm Rebecca! I recently discovered a passion for coding
               through Lighthouse Labs and have been dedicated to web development

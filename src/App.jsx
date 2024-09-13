@@ -10,7 +10,7 @@ import {ThemeProvider} from './context/ThemeProvider'
 function App() {
 
   return (
-    <div className='flex flex-col gap-40'>
+    <div className='flex flex-col gap-40 max-w-full mx-auto overflow-x-hidden'>
     <ThemeProvider>
       <MiniNav />
       <HeaderSection />
