@@ -38,9 +38,9 @@ export const EduSection = () => {
       <section
         id="education"
         ref={ref}
-        className="section h-auto pl-20 items-left justify-center"
+        className="ection h-auto sm:pl-10 md:pl-20 lg:pl-20 items-left justify-center"
       >
-        <h2 className="font-header text-6xl text-header_text pb-10">
+        <h2 className="pb-10">
           EDUCATION
         </h2>
         {education.map((edu, index) => (
@@ -51,19 +51,19 @@ export const EduSection = () => {
             </span>
             <span className="relative text-accent">{edu.year}</span>
           </h1>
-          <p className="block relative text-4xl pb-2 font-header text-header_text">
+          <p className="block relative sm:text-base md:text-2xl lg:text-4xl md:pb-2 lg:pb-2 font-header text-header_text">
             {edu.school}
           </p>
-          <p className="block relative text-4xl pb-5 font-header text-header_text">
+          <p className="block relative sm:text-base md:text-2xl lg:text-4xl pb-5 font-header text-header_text">
             {edu.program}
           </p>
-          <p className="text-text font-body text-lg pb-2 mr-80">
+          <p className="text-text font-body sm:text-sm md:text-base lg:text-lg sm:mr-20 md:mr-60 lg:mr-80">
             {edu.overview}
           </p>
-          <p className="text-text font-body font-bold text-lg">
+          <p className="font-bold pt-2 text-text font-body sm:text-sm md:text-base lg:text-lg sm:mr-20 md:mr-60 lg:mr-80">
             Key Skills:
           </p>
-          <ul className="text-text font-body text-lg mr-80">
+          <ul className="text-text font-body sm:text-sm md:text-base lg:text-lg sm:mr-20 md:mr-60 lg:mr-80">
             {Object.keys(edu.key_skills).map((key, index) => (
               <li key={index}>
                 <span>{key} - </span>
@@ -71,10 +71,10 @@ export const EduSection = () => {
               </li>
             ))}
           </ul>
-          <p className="text-text font-body font-bold text-lg pt-2">
+          <p className="font-bold pt-2 text-text font-body sm:text-sm md:text-base lg:text-lg sm:mr-20 md:mr-60 lg:mr-80">
             Soft Skills:
             </p>
-            <p className="text-text font-body text-lg mr-80">{edu.soft_skills}</p>
+            <p className="text-text font-body sm:text-sm md:text-base lg:text-lg sm:mr-20 md:mr-60 lg:mr-80">{edu.soft_skills}</p>
         </div>
         ))}
       </section>
