@@ -10,7 +10,7 @@ export const theme = {
     },
     screens: {
       'sm': '10px',  // Small devices 
-      'md': '780px',  // Medium devices 
+      'md': '700px',  // Medium devices 
       'lg': '1280px', // Large devices (desktops)
     }
   },

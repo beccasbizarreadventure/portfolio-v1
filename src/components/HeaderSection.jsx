@@ -14,7 +14,7 @@ const HeaderSection = () => {
       }}
     >
       <section id="home" className="section" ref={ref}>
-        <div className="flex flex-col justify-center h-auto pl-20 pt-40 gap-40">
+        <div className="flex flex-col justify-center h-auto sm:pl-10 md:pl-20 lg:pl-20 pt-40 gap-40">
           <div className="relative">
             <h1 className="relative">
               <span className="block relative">
