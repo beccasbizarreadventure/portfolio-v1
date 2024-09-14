@@ -33,10 +33,10 @@ const FooterSection = () => {
         className="section flex flex-col h-auto items-center justify-center"
         ref={ref}
       >
-        <h2 className="pb-10">
+        <h2 className="sm:pb-7 md:pb-10 lg:pb-10">
           STAY IN TOUCH
         </h2>
-        <div className="flex space-x-10 pb-10">
+        <div className="flex sm:space-x-7 md:space-x-10 lg:space-x-10 pb-10">
           {links.map((link, index) => (
             <motion.div
               whileHover={{ scale: 1.1 }}
@@ -45,7 +45,7 @@ const FooterSection = () => {
               key={index}
             >
               <a href={link.link}>
-                <button className="h-[4rem] w-[4rem] rounded-full text-2xl text-buttons bg-contrast relative before:absolute before:h-[4rem] before:w-[4rem] before:rounded-full before:bg-secondary before:top-0 before:left-2 before:-z-10">
+                <button className="sm:h-[2.2rem] sm:w-[2.2rem] sm:text-lg sm:before:h-[2.2rem] sm:before:w-[2.2rem] sm:before:left-1 md:h-[3.5rem] md:w-[3.5rem] md:text-2xl md:before:h-[3.5rem] md:before:w-[3.5rem] md:before:left-2 lg:h-[4rem] lg:w-[4rem] lg:text-2xl lg:before:h-[4rem] lg:before:w-[4rem] lg:before:left-2 rounded-full text-buttons bg-contrast relative before:absolute before:rounded-full before:bg-secondary before:top-0 before:-z-10">
                   <i className={link.icon} />
                 </button>
               </a>

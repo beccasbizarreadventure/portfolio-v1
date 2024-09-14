@@ -80,7 +80,7 @@ const IntroSection = () => {
             </li>
             <li>
               Beyond coding, I have a love for tattoos, video games, baking, 
-              creating digital art and my own embroidery designs. I also own two
+              painting and creating my own embroidery designs. I also own two
               adorable bunnies, Levi and Laurel.
             </li>
           </ul>
