@@ -33,7 +33,7 @@ const FooterSection = () => {
         className="section flex flex-col h-auto items-center justify-center"
         ref={ref}
       >
-        <h2 className="text-6xl font-header text-header_text pb-[5rem]">
+        <h2 className="pb-10">
           STAY IN TOUCH
         </h2>
         <div className="flex space-x-10 pb-10">

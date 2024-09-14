@@ -68,27 +68,33 @@ const ProjectsSection = () => {
               </div>
               <div
                 className={`
-                  ${index % 2 === 0 ? "lg:pr-20" : "lg:pl-80"}
+                  ${index % 2 === 0 ? "lg:pr-20" : "lg:pl-40"}
               flex flex-col text-left sm:pt-10 md:pt-10 lg:pt-0`}
               >
-                <h3 className="pb-2">{project.title}</h3>
-                <p className="text-text font-body py-2 mx-auto lg:mx-0 lg:pr-60 sm:text-sm md:text-base lg:text-lg">
+                <h3 className="pb-2 sm:pr-20 md:pr-60 lg:pr-60">{project.title}</h3>
+                <p className={`
+                 ${index % 2 === 0 ? "lg:pr-20" : "lg:pl-0"}
+                text-text font-body py-2 mx-auto lg:mx-0 sm:pr-20 md:pr-60 sm:text-sm md:text-base lg:text-lg`}>
                   {project.description}
                 </p>
-                <p className="lg:pr-60 text-text font-body pb-2 sm:text-sm md:text-base lg:text-lg">
+                <p className={`
+                  ${index % 2 === 0 ? "lg:pr-20" : "lg:pl-0"}
+                sm:pr-20 md:pr-60 text-text font-body pb-2 sm:text-sm md:text-base lg:text-lg`}>
                   <span className="font-bold">Tech Stack - </span>
                   {project.techStack}
                 </p>
                 <a href={project.link} className="lg:mx-auto lg:ml-0">
                   <motion.div
-                    className="relative flex items-center justify-center h-[2.5rem] w-[6.5rem] bg-contrast rounded-full overflow-hidden sm:text-sm md:text-base lg:text-lg font-body"
+                    className="
+                    relative flex items-center justify-center sm:h-[1.5rem] sm:w-[4.5rem] md:h-[2rem] md:w-[6rem] lg:h-[2.5rem] lg:w-[6.5rem] sm:bg-secondary md:bg-secondary lg:bg-contrast rounded-full overflow-hidden sm:text-sm md:text-base lg:text-lg font-body
+                    sm:before:absolute before:sm:h-[1.5rem] before:sm:w-[4.5rem] sm:before:rounded-full sm:before:bg-contrast sm:before:right-1 md:before:absolute before:md:h-[2rem] before:md:w-[6rem] md:before:rounded-full md:before:bg-contrast md:before:right-2 lg:before:hidden"
                     whileHover="hover"
                     whileTap={{ scale: 0.9 }}
                     initial="initial"
                     animate="initial"
                   >
                     <motion.span
-                      className="absolute bg-contrast px-4 text-buttons z-1"
+                      className="absolute px-4 text-buttons z-1"
                       variants={{
                         initial: { x: 0 },
                         hover: { x: -15 },
