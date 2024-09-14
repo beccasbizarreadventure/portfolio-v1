@@ -38,7 +38,7 @@ export const EduSection = () => {
       <section
         id="education"
         ref={ref}
-        className="ection h-auto sm:pl-10 md:pl-20 lg:pl-20 items-left justify-center"
+        className="section h-auto sm:pl-10 md:pl-20 lg:pl-20 items-left justify-center"
       >
         <h2 className="pb-10">
           EDUCATION
