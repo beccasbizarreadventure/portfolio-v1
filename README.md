@@ -1,8 +1,16 @@
-# React + Vite
+# Junior Developer Portfolio (v1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The first version of my personal professional junior developer portfolio showcasing my work. Designed with Figma, built with React, and deployed with Vercel.
 
-Currently, two official plugins are available:
+View the live version <a href="https://beccasbizarreadventure-portfolio.vercel.app/">here</a>!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tech Stack: 
+- React + Vite 
+- Tailwind CSS
+- NextUI
+- Framer Motion
+
+### Credits: 
+- <a href="https://codesandbox.io/p/sandbox/cgt5kc">Scrolling animation</a>
+- <a href="https://www.freepik.com/icon/hare_2611972#fromView=keyword&page=2&position=22&uuid=dd8a5951-9e59-4e88-a378-7a78ee7a4953">Bunny icon</a>
+- <a href="https://fontawesome.com/">Link and navigation icons</a>
