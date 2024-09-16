@@ -5,8 +5,15 @@ import { motion } from "framer-motion";
 
 const MiniNav = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
+  // Unified scroll function
+  const scrollToSection = (id, offset = -100) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      const y = section.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   // Framer Motion animation properties
@@ -24,7 +31,7 @@ const MiniNav = () => {
   return (
     <nav className="fixed flex sm:flex-row sm:left-10 sm:items-center md:flex-col md:right-20 md:items-end lg:flex-col lg:right-20 lg:items-end z-50">
       <ul className="flex justify-center items-center text-navlinks bg-nav sm:text-base sm:h-[2.5rem] sm:w-[12rem] sm:flex-row md:text-xl md:h-[13rem] md:w-[3.5rem] md:flex-col lg:text-xl lg:h-[14rem] lg:w-[4rem] lg:flex-col rounded-full mt-10">
-      <li>
+        <li>
           {/* Tooltip for large screens */}
           <div className="hidden lg:block">
             <Tooltip
@@ -173,14 +180,15 @@ const MiniNav = () => {
                 </motion.span>
               }
             >
-              <button onClick={() => scrollToSection("contact")}>
+              {/* Use scrollToSection with offset 0 for Contact */}
+              <button onClick={() => scrollToSection("contact", 0)}>
                 <i className="fa-regular fa-id-card p-2"></i>
               </button>
             </Tooltip>
           </div>
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={() => scrollToSection("contact")}
+            onClick={() => scrollToSection("contact", 0)}
             className="lg:hidden sm:p-2 md:p-1"
           >
             <i className="fa-regular fa-id-card"></i>
