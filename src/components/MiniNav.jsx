@@ -6,17 +6,15 @@ import { motion } from "framer-motion";
 const MiniNav = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
-  // Unified scroll function
-  const scrollToSection = (id, offset = -100) => {
+  const scrollToSection = (id, offset) => {
     const section = document.getElementById(id);
 
     if (section) {
-      const y = section.getBoundingClientRect().top + window.pageYOffset + offset;
+      const y = section.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
-  // Framer Motion animation properties
   const motionProps = {
     initial: { scale: 0 },
     animate: { scale: 1 },
@@ -84,14 +82,14 @@ const MiniNav = () => {
                 </motion.span>
               }
             >
-              <button onClick={() => scrollToSection("intro")}>
+              <button onClick={() => scrollToSection("intro", -100)}>
                 <i className="fa-regular fa-face-smile p-2"></i>
               </button>
             </Tooltip>
           </div>
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={() => scrollToSection("intro")}
+            onClick={() => scrollToSection("intro", -100)}
             className="lg:hidden p-1"
           >
             <i className="fa-regular fa-face-smile"></i>
@@ -116,14 +114,14 @@ const MiniNav = () => {
                 </motion.span>
               }
             >
-              <button onClick={() => scrollToSection("education")}>
+              <button onClick={() => scrollToSection("education", -100)}>
                 <i className="fa-solid fa-user-graduate p-2"></i>
               </button>
             </Tooltip>
           </div>
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={() => scrollToSection("education")}
+            onClick={() => scrollToSection("education", -100)}
             className="lg:hidden sm:p-2 md:p-1"
           >
             <i className="fa-solid fa-user-graduate"></i>
@@ -148,14 +146,14 @@ const MiniNav = () => {
                 </motion.span>
               }
             >
-              <button onClick={() => scrollToSection("projects")}>
+              <button onClick={() => scrollToSection("projects", -100)}>
                 <i className="fa-regular fa-pen-to-square p-2"></i>
               </button>
             </Tooltip>
           </div>
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={() => scrollToSection("projects")}
+            onClick={() => scrollToSection("projects", -100)}
             className="lg:hidden sm:p-2 md:p-1"
           >
             <i className="fa-regular fa-pen-to-square"></i>
