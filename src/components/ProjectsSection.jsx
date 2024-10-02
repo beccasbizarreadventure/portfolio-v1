@@ -109,7 +109,6 @@ const ProjectsSection = () => {
                 className="max-w-5xl bg-background"
               >
                 <ModalContent>
-                  {() => (
                     <>
                       <ModalHeader className="flex flex-col">
                         <h3>{activeProject?.title}</h3>
@@ -121,8 +120,10 @@ const ProjectsSection = () => {
                           className="rounded-xl border-3 border-text"
                         />
                         <p className="sm:text-sm md:text-base lg:text-lg text-text font-body">{activeProject?.description}</p>
+                        <div className="flex flex-col">
                         <p className="font-bold sm:text-sm md:text-base lg:text-lg text-text font-body pr-2">Tech Stack:</p>
                         <p className="sm:text-sm md:text-base lg:text-lg text-text font-body">{activeProject?.techStack}</p>
+                        </div>
                       </ModalBody>
                       <ModalFooter>
                       <motion.div
@@ -156,7 +157,6 @@ const ProjectsSection = () => {
                 </motion.div>
                       </ModalFooter>
                     </>
-                  )}
                 </ModalContent>
               </Modal>
             </div>
