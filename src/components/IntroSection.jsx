@@ -49,11 +49,11 @@ const IntroSection = () => {
               </span>
             }
           >
-            <div className="sm:h-[15rem] sm:w-[15rem] md:h-[25rem] md:w-[20rem] lg:h-[40rem] lg:w-[30rem] flex flex-grow-0 flex-shrink-0 justify-center items-center before:flex-grow-0 before:flex-shrink-0 bg-accent rounded-2xl relative before:absolute sm:before:h-[15rem] sm:before:w-[15rem] md:before:h-[25rem] md:before:w-[20rem] lg:before:h-[40rem] lg:before:w-[30rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10">
+            <div className="sm:h-[20rem] sm:w-[15rem] md:h-[25rem] md:w-[20rem] lg:h-[40rem] lg:w-[30rem] flex flex-grow-0 flex-shrink-0 justify-center items-center before:flex-grow-0 before:flex-shrink-0 bg-accent rounded-2xl relative before:absolute sm:before:h-[20rem] sm:before:w-[15rem] md:before:h-[25rem] md:before:w-[20rem] lg:before:h-[40rem] lg:before:w-[30rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10">
               <img
                 src="/TempPic.jpg"
                 alt="My Son"
-                className="sm:h-[12rem] sm:w-[12rem] md:h-[20rem] md:w-[15rem] lg:h-[35rem] lg:w-[25rem] rounded-2xl border-5 border-buttons"
+                className="sm:h-[16rem] sm:w-[12rem] md:h-[20rem] md:w-[15rem] lg:h-[35rem] lg:w-[25rem] rounded-2xl border-5 border-buttons"
               />
             </div>
           </Tooltip>

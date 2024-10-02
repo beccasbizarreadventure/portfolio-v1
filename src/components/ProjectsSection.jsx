@@ -67,7 +67,7 @@ const ProjectsSection = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:gap-y-10 md:gap-y-20 lg:gap-y-20">
           {projects.map((project, index) => (
             <div key={index}>
-              <div className="sm:gap-2 md:gap-5 lg:gap-5 flex-grow-0 flex-shrink-0 flex-col bg-accent sm:h-[15rem] sm:w-[16rem] md:h-[20rem] md:w-[25rem] lg:h-[20rem] lg:w-[25rem] rounded-2xl relative before:absolute before:sm:h-[15rem] before:sm:w-[16rem] before:md:h-[20rem] before:md:w-[25rem] before:lg:h-[20rem] before:lg:w-[25rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10 flex justify-center items-left">
+              <div className="sm:gap-2 md:gap-5 lg:gap-5 flex-grow-0 flex-shrink-0 flex-col bg-accent sm:h-[13rem] sm:w-[15rem] md:h-[20rem] md:w-[25rem] lg:h-[20rem] lg:w-[25rem] rounded-2xl relative before:absolute before:sm:h-[13rem] before:sm:w-[15rem] before:md:h-[20rem] before:md:w-[25rem] before:lg:h-[20rem] before:lg:w-[25rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10 flex justify-center items-left">
                 <h3 className="text-buttons pl-8">{project.title}</h3>
                 <p className="sm:text-sm md:text-base lg:text-lg text-buttons sm:max-h-[3.75rem] md:max-h-[4.5rem] lg:max-h-[5rem] font-body line-clamp-3 px-8 pb-5">{project.description}</p>
                 <motion.div
