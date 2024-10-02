@@ -42,15 +42,11 @@ const IntroSection = () => {
             motionProps={motionProps}
             offset={25}
             content={
-              <motion.span
+              <span
                 className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
-                initial={motionProps.initial}
-                animate={motionProps.animate}
-                exit={motionProps.exit}
-                transition={motionProps.transition}
               >
                 Levi is a great helper!!
-              </motion.span>
+              </span>
             }
           >
             <div className="sm:h-[15rem] sm:w-[15rem] md:h-[25rem] md:w-[20rem] lg:h-[40rem] lg:w-[30rem] flex flex-grow-0 flex-shrink-0 justify-center items-center before:flex-grow-0 before:flex-shrink-0 bg-accent rounded-2xl relative before:absolute sm:before:h-[15rem] sm:before:w-[15rem] md:before:h-[25rem] md:before:w-[20rem] lg:before:h-[40rem] lg:before:w-[30rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10">

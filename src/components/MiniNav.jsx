@@ -28,7 +28,7 @@ const MiniNav = () => {
 
   return (
     <nav className="flex fixed top-8 sm:pl-8 md:right-8 lg:right-8 z-50 sm:flex-row md:flex-col lg:flex-col">
-      <ul className="flex justify-center items-center text-navlinks bg-nav sm:text-base sm:h-[2.5rem] sm:w-[12rem] sm:flex-row md:text-xl md:h-[13rem] md:w-[3.5rem] md:flex-col lg:text-xl lg:h-[14rem] lg:w-[4rem] lg:flex-col rounded-full">
+      <ul className="flex justify-center items-center text-navlinks bg-nav sm:text-xl sm:h-[3rem] sm:w-[13rem] sm:flex-row md:text-2xl md:h-[15rem] md:w-[4rem] md:flex-col lg:text-3xl lg:h-[18rem] lg:w-[5rem] lg:flex-col rounded-full">
         <li>
           {/* Tooltip for large screens */}
           <div className="hidden lg:block">
@@ -66,11 +66,11 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <motion.span
+                <span
                   className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
                 >
                   About Me
-                </motion.span>
+                </span>
               }
             >
               <button onClick={() => scrollToSection("intro", -100)}>
@@ -94,11 +94,11 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <motion.span
+                <span
                   className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
                 >
                   Education
-                </motion.span>
+                </span>
               }
             >
               <button onClick={() => scrollToSection("education", -100)}>
@@ -122,11 +122,11 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <motion.span
+                <span
                   className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
                 >
                   Projects
-                </motion.span>
+                </span>
               }
             >
               <button onClick={() => scrollToSection("projects", -100)}>
@@ -150,10 +150,10 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <motion.span
+                <span
                   className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                   Contact
-                </motion.span>
+                </span>
               }
             >
               {/* Use scrollToSection with offset 0 for Contact */}
@@ -175,7 +175,7 @@ const MiniNav = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={toggleTheme}
-        className="bg-nav text-navlinks sm:text-base sm:h-[2.5rem] sm:w-[2.5rem] md:text-xl md:h-[3.5rem] md:w-[3.5rem] lg:text-2xl lg:h-[4rem] lg:w-[4rem] rounded-full sm:ml-2 md:ml-0 lg:ml-0 sm:mt-0 md:mt-5 lg:mt-5"
+        className="bg-nav text-navlinks sm:text-xl sm:h-[3rem] sm:w-[3rem] md:text-2xl md:h-[4rem] md:w-[4rem] lg:text-3xl lg:h-[5rem] lg:w-[5rem] rounded-full sm:ml-2 md:ml-0 lg:ml-0 sm:mt-0 md:mt-5 lg:mt-5"
       >
         {theme === "light" ? (
           <i className="fa-regular fa-moon" />
