@@ -1,3 +1,4 @@
+const {nextui} = require('@nextui-org/theme');
 // tailwind.config.js
 import { nextui } from "@nextui-org/react";
 
@@ -55,9 +56,13 @@ export const plugins = [
 
 
 export default {
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+    nextui()],
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Adjust paths according to your project structure
+    "./src/**/*.{js,jsx,ts,tsx}",
     "./public/index.html",
+    "./node_modules/@nextui-org/theme/dist/components/(button|modal|ripple|spinner).js"
   ],
   theme,
   plugins,
