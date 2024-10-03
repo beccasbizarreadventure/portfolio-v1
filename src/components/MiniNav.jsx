@@ -37,14 +37,16 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <span
-                  className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
+                <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                   Home
                 </span>
               }
             >
               <button onClick={() => scrollToSection("home")}>
-                <i className="fa-solid fa-house p-2"></i>
+                <motion.i
+                  whileTap={{ scale: 0.9 }}
+                  className="fa-solid fa-house p-2"
+                ></motion.i>
               </button>
             </Tooltip>
           </div>
@@ -66,15 +68,16 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <span
-                  className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
-                >
+                <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                   About Me
                 </span>
               }
             >
               <button onClick={() => scrollToSection("intro", -100)}>
-                <i className="fa-regular fa-face-smile p-2"></i>
+                <motion.i
+                  whileTap={{ scale: 0.9 }}
+                  className="fa-regular fa-face-smile p-2"
+                ></motion.i>
               </button>
             </Tooltip>
           </div>
@@ -94,15 +97,16 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <span
-                  className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
-                >
+                <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                   Education
                 </span>
               }
             >
               <button onClick={() => scrollToSection("education", -100)}>
-                <i className="fa-solid fa-user-graduate p-2"></i>
+                <motion.i
+                  whileTap={{ scale: 0.9 }}
+                  className="fa-solid fa-user-graduate p-2"
+                ></motion.i>
               </button>
             </Tooltip>
           </div>
@@ -122,15 +126,16 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <span
-                  className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body"
-                >
+                <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                   Projects
                 </span>
               }
             >
               <button onClick={() => scrollToSection("projects", -100)}>
-                <i className="fa-regular fa-pen-to-square p-2"></i>
+                <motion.i
+                  whileTap={{ scale: 0.9 }}
+                  className="fa-regular fa-pen-to-square p-2"
+                ></motion.i>
               </button>
             </Tooltip>
           </div>
@@ -150,15 +155,17 @@ const MiniNav = () => {
               motionProps={motionProps}
               offset={25}
               content={
-                <span
-                  className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
+                <span className="bg-header_text bg-opacity-40 text-buttons px-3 py-2 rounded-xl font-body">
                   Contact
                 </span>
               }
             >
               {/* Use scrollToSection with offset 0 for Contact */}
               <button onClick={() => scrollToSection("contact", 0)}>
-                <i className="fa-regular fa-id-card p-2"></i>
+                <motion.i
+                  whileTap={{ scale: 0.9 }}
+                  className="fa-regular fa-id-card p-2"
+                ></motion.i>
               </button>
             </Tooltip>
           </div>

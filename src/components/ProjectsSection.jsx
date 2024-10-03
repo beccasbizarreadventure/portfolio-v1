@@ -69,7 +69,9 @@ const ProjectsSection = () => {
             <div key={index}>
               <div className="sm:gap-2 md:gap-5 lg:gap-5 flex-grow-0 flex-shrink-0 flex-col bg-accent sm:h-[13rem] sm:w-[15rem] md:h-[20rem] md:w-[25rem] lg:h-[20rem] lg:w-[25rem] rounded-2xl relative before:absolute before:sm:h-[13rem] before:sm:w-[15rem] before:md:h-[20rem] before:md:w-[25rem] before:lg:h-[20rem] before:lg:w-[25rem] before:rounded-2xl before:bg-secondary before:top-2 before:left-3 before:-z-10 flex justify-center items-left">
                 <h3 className="text-buttons pl-8">{project.title}</h3>
-                <p className="sm:text-sm md:text-base lg:text-lg text-buttons sm:max-h-[3.75rem] md:max-h-[4.5rem] lg:max-h-[5rem] font-body line-clamp-3 px-8 pb-5">{project.description}</p>
+                <p className="sm:text-sm md:text-base lg:text-lg text-buttons sm:max-h-[3.75rem] md:max-h-[4.5rem] lg:max-h-[5rem] font-body line-clamp-3 px-8 pb-5">
+                  {project.description}
+                </p>
                 <motion.div
                   onClick={() => handleOpenModal(project)}
                   className="
@@ -107,56 +109,88 @@ const ProjectsSection = () => {
                 scrollBehavior="outside"
                 backdrop="blur"
                 className="max-w-5xl bg-background"
+                hideCloseButton={true}
               >
                 <ModalContent>
-                    <>
-                      <ModalHeader className="flex flex-col">
-                        <h3>{activeProject?.title}</h3>
-                      </ModalHeader>
-                      <ModalBody>
-                        <img
-                          src={activeProject?.image}
-                          alt={activeProject?.title}
-                          className="rounded-xl border-3 border-text"
-                        />
-                        <p className="sm:text-sm md:text-base lg:text-lg text-text font-body">{activeProject?.description}</p>
-                        <div className="flex flex-col">
-                        <p className="font-bold sm:text-sm md:text-base lg:text-lg text-text font-body pr-2">Tech Stack:</p>
-                        <p className="sm:text-sm md:text-base lg:text-lg text-text font-body">{activeProject?.techStack}</p>
-                        </div>
-                      </ModalBody>
-                      <ModalFooter>
+                  <>
+                    <ModalHeader className="flex flex-col">
+                      <button
+                        onClick={() => onOpenChange(false)} // Close modal on click
+                        className="absolute top-4 right-4 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 flex items-center justify-center"
+                      >
+                        <motion.svg
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          initial="initial"
+                          animate="initial"
+                          aria-hidden="true"
+                          fill="none"
+                          focusable="false"
+                          height="100%" // Make it responsive
+                          width="100%" // Adjust based on button size
+                          role="presentation"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          className="sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 focus:outline-none"
+                        >
+                          <path d="M18 6L6 18M6 6l12 12"></path>
+                        </motion.svg>
+                      </button>
+                      <h3>{activeProject?.title}</h3>
+                    </ModalHeader>
+                    <ModalBody>
+                      <img
+                        src={activeProject?.image}
+                        alt={activeProject?.title}
+                        className="rounded-xl border-3 border-text"
+                      />
+                      <p className="sm:text-sm md:text-base lg:text-lg text-text font-body">
+                        {activeProject?.description}
+                      </p>
+                      <div className="flex flex-col">
+                        <p className="font-bold sm:text-sm md:text-base lg:text-lg text-text font-body pr-2">
+                          Tech Stack:
+                        </p>
+                        <p className="sm:text-sm md:text-base lg:text-lg text-text font-body">
+                          {activeProject?.techStack}
+                        </p>
+                      </div>
+                    </ModalBody>
+                    <ModalFooter>
                       <motion.div
-                  onClick={() => window.open(activeProject?.link)}
-                  className="
+                        onClick={() => window.open(activeProject?.link)}
+                        className="
                     ml-8 relative flex items-center justify-center sm:h-[1.5rem] sm:w-[6.5rem] md:h-[2rem] md:w-[8rem] lg:h-[2.5rem] lg:w-[8.5rem] sm:bg-secondary md:bg-secondary lg:bg-contrast rounded-full overflow-hidden sm:text-sm md:text-base lg:text-lg font-body
                     sm:before:absolute before:sm:h-[1.5rem] before:sm:w-[6.5rem] sm:before:rounded-full sm:before:bg-accent sm:before:right-1 md:before:absolute before:md:h-[2rem] before:md:w-[8rem] md:before:rounded-full md:before:bg-accent md:before:right-2 lg:before:hidden cursor-pointer"
-                  whileHover="hover"
-                  whileTap={{ scale: 0.9 }}
-                  initial="initial"
-                  animate="initial"
-                >
-                  <motion.span
-                    className="absolute px-4 text-buttons z-1"
-                    variants={{
-                      initial: { x: 0 },
-                      hover: { x: -15 },
-                    }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    View Code
-                  </motion.span>
-                  <motion.i
-                    className="fa-solid fa-circle-chevron-right absolute right-4 text-buttons z-0"
-                    variants={{
-                      initial: { x: 0, opacity: 0 },
-                      hover: { opacity: 1 },
-                    }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </motion.div>
-                      </ModalFooter>
-                    </>
+                        whileHover="hover"
+                        whileTap={{ scale: 0.9 }}
+                        initial="initial"
+                        animate="initial"
+                      >
+                        <motion.span
+                          className="absolute px-4 text-buttons z-1"
+                          variants={{
+                            initial: { x: 0 },
+                            hover: { x: -15 },
+                          }}
+                          transition={{ duration: 0.5 }}
+                        >
+                          View Code
+                        </motion.span>
+                        <motion.i
+                          className="fa-solid fa-circle-chevron-right absolute right-4 text-buttons z-0"
+                          variants={{
+                            initial: { x: 0, opacity: 0 },
+                            hover: { opacity: 1 },
+                          }}
+                          transition={{ duration: 0.3 }}
+                        />
+                      </motion.div>
+                    </ModalFooter>
+                  </>
                 </ModalContent>
               </Modal>
             </div>
